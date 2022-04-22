@@ -1,5 +1,5 @@
 
-generate a server response like "https://httpbin.org/get"
+generate a server response like: `https://httpbin.org/get`
 
 ```shell
 $ curl 'https://httpbin.org/get?a1=v1&a2=v2'
