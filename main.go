@@ -44,11 +44,11 @@ func handler(c *gin.Context) {
 		Url:     url,
 	}
 	var result string
-	data, err := jsonEncoding(info)
-	if err != nil {
+	if data, err := jsonEncoding(info); err != nil {
 		fmt.Println(err)
+	} else {
+		result = string(data)
 	}
-	result = string(data)
 	c.String(200, "%s", result)
 }
 
